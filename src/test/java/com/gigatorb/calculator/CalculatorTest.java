@@ -36,5 +36,10 @@ public class CalculatorTest {
         assertEquals(3,response);
     }
 
-
+    @Test
+    public void testNegativeNumber(){
+        Calculator calculator = new Calculator();
+        int response = calculator.add("1,2,-5,5,-8");
+        assertEquals(3,response);
+    }
 }

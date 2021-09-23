@@ -18,6 +18,13 @@ public class Calculator {
         return sum;
     };
 
+    private boolean isNegativeNumber(double number){
+        if(number < 0){
+            return true;
+        }
+        return false;
+    }
+
 }
 
 
