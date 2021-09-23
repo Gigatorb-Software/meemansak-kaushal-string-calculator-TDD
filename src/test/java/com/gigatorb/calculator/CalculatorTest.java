@@ -29,5 +29,11 @@ public class CalculatorTest {
         assertEquals(10,response);
     }
 
+    @Test
+    public void testDifferentDelimeters(){
+        Calculator calculator = new Calculator();
+        int response = calculator.add("//;\\n1;2");
+        assertEquals(3,response);
+    }
 
 }
